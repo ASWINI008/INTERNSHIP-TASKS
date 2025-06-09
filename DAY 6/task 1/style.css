@@ -1,0 +1,25 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+.white-text{
+  background-color: red;
+  color: white;
+  padding: 3%;
+}
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+  
+}
+#outer-box{
+  border-color: purple;
+  border-width: 10px;
+  border-style: solid;
+}
+*{
+  font-size: large;
+}
