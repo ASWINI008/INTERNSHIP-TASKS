@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .holl-grail{
+            display: grid;
+            grid-template-areas:
+              "header header header"
+              "sidebar main main"
+              "footer footer footer";
+            grid-template-columns: 280px 1fr;
+            grid-template-rows: 80px 1fr 100px;
+            gap: 10px;
+            height:100vh;
+        }
+        header{
+            grid-area: header;
+        }
+        aside{
+            grid-area:sidebar;
+        }
+        main{
+            grid-area:main;
+        }
+        footer{
+            grid-area:footer;
+        }
+        div>*{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="holl-grail">
+        <header>Header</header>
+        <aside>SideBar</aside>
+        <main>Main Content</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
