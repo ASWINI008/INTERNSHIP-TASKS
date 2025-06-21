@@ -19,79 +19,79 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-    body{
+    .con{
+      display: grid;
+      width: 748px;
+      height: 748px;
       background-color: black;
-
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+    body{
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-content: center;
+      height: 100vh;
+    }
+    
+    .red{
+      background-color: #e72f24;
+    }
+    .white1{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .white2{
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+      /* width: 50px;
+      height: 130px;
+      margin-top: 409.5px; */
 
     }
-     .container{
-       height: 748px;
-       width:748px;
-       background-color: black;
-       display: grid;
-       grid-template-columns: 320px 198px 153px 50px ;
-       grid-template-rows: 414px 130px 155px 22px;
-       gap: 9px;
-     }
-     .red{
-       display: grid;
-       height:414px ;
-       width: 320px;
-       background-color: red;
-     }
-     .white-box1{
-      display: grid;
-       height: 414px;
-       width: 401px;
-       background-color: beige;
-       grid-column: span 3;
-     }
-     .white-box2{
-      display: grid;
-      height: 428px;
-      width:320px;
-      background-color: white;
+    .yellow{
+      background-color: #F9D01E;
+  
+    }
+    .white3{
+      grid-area: 2/2/4/1;
+      background-color: #F0F1EC;
       grid-row: span 2;
-     }
-     .white-box3{
-       display: grid;
-       height: 428px;
-       width: 320px;
-       background-color: white;
-       grid-area:  2/2/4;
-     }
-     .blue{
-       display: grid;
-       background-color: darkblue;
-       height: 130px;
-       width: 50px;
-       grid-row-end: span;
-       
-     }
-     .yellow{
-      display: grid;
-      height: 20px;
-      width: 198px;
-      background-color: yellow;
-     }
-     .blue2{
-       height: 20px;
-       width: 153px;
-       background-color: blue;
-     }
+      grid-column: span 2;
+    }
+    .white4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .white5{
+      background-color: #F0F1EC
+    }
+    .black{
+      background-color: ;
+    }
+
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
-   <div class="container">
-     <div class="red"></div>
-     <div class=" white-box1"></div>
-     <div class="white-box2"></div>
-     <div class="white-box3"></div>
-     <div class="blue"></div>
-     <div class="yellow"></div>
-     <div class="blue2"></div>
+   <div class="con">
+      <div class="red"></div>
+      <div class="white1"></div>
+      <div class="white2"></div>
+      <div class="white3"></div>
+      <div class="blue"></div>
+      <div class="white4"></div>
+      <div class="white5"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
    </div>
 </body>
 
